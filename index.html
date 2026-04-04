@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v.Sudhan | Java Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>SUDHAN</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+                <li><a href="#" data-page="about" class="nav-link">About</a></li>
+                <li><a href="#" data-page="skills" class="nav-link">Skills</a></li>
+                <li><a href="#" data-page="resume" class="nav-link">Resume</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="home-container">
+                <!-- Advanced Animation Background -->
+                <div class="animated-background">
+                    <!-- Floating Code Elements -->
+                    <div class="code-float code-float-1">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="code-float code-float-2">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="code-float code-float-3">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="code-float code-float-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+
+                    <!-- Particle Effect -->
+                    <div class="particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+
+                    <!-- Neural Network Effect -->
+                    <svg class="neural-network" viewBox="0 0 400 400" preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#00F5FF;stop-opacity:0.5" />
+                                <stop offset="100%" style="stop-color:#8A2BE2;stop-opacity:0.3" />
+                            </linearGradient>
+                        </defs>
+                        <g class="neural-nodes">
+                            <circle class="node" cx="50" cy="50" r="4"></circle>
+                            <circle class="node" cx="350" cy="50" r="4"></circle>
+                            <circle class="node" cx="200" cy="200" r="4"></circle>
+                            <circle class="node" cx="50" cy="350" r="4"></circle>
+                            <circle class="node" cx="350" cy="350" r="4"></circle>
+                        </g>
+                        <g class="neural-lines" stroke="url(#lineGradient)" stroke-width="1">
+                            <line x1="50" y1="50" x2="200" y2="200"></line>
+                            <line x1="350" y1="50" x2="200" y2="200"></line>
+                            <line x1="200" y1="200" x2="50" y2="350"></line>
+                            <line x1="200" y1="200" x2="350" y2="350"></line>
+                        </g>
+                    </svg>
+
+                    <!-- Cyberpunk Grid Background -->
+                    <div class="cyberpunk-grid"></div>
+                </div>
+                
+                <!-- Home Content -->
+                <div class="home-content">
+                    <div class="profile-section">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-image">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="glow-ring"></div>
+                            <div class="orbit-ring"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="home-text">
+                        <h2 class="greeting animate-fadeInUp">Hello, I'm</h2>
+                        <h1 class="name animate-fadeInUp-delayed-1">V.SUDHAN</h1>
+                        <p class="title animate-fadeInUp-delayed-2">Java Full Stack Developer</p>
+                        <p class="subtitle animate-fadeInUp-delayed-3">Building elegant solutions with modern technologies</p>
+                        
+                        <div class="cta-buttons animate-fadeInUp-delayed-4">
+                            <button class="btn btn-primary" onclick="navigateTo('projects')">Explore My Work</button>
+                            <button class="btn btn-secondary" onclick="navigateTo('contact')">Get In Touch</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="back-button-container">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+            </div>
+            <div class="page-container">
+                <div class="page-header">
+                    <h1 class="page-title">About Me</h1>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-intro">
+                        <p class="intro-text">
+                            I'm a passionate Java Full Stack Developer with expertise in building scalable and maintainable web applications. With a strong foundation in both frontend and backend and database technologies, I create seamless digital experiences.
+                        </p>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="about-card fade-in">
+                            <div class="card-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Full Stack Development</h3>
+                            <p>Specialized in Java and modern web technologies to build applications.</p>
+                        </div>
+
+                        <div class="about-card fade-in">
+                            <div class="card-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Database Design</h3>
+                            <p>Expert in designing and optimizing databases with MySQL.</p>
+                        </div>
+
+                        <div class="about-card fade-in">
+                            <div class="card-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Responsive Design</h3>
+                            <p>Creating beautiful, responsive interfaces that work perfectly.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-detailed">
+                        <h2>My Journey</h2>
+                        <p>
+                            My journey in development started with learning the basics of programming, where I built a strong foundation in Java and problem-solving. As I progressed, I developed an interest in web development and began learning HTML, CSS, and JavaScript. To apply my knowledge, I built a responsive portfolio website, which showcases my skills, projects, and understanding of modern web design. This project reflects my dedication to continuous learning and improving my development skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Page -->
+        <section id="skills" class="page">
+            <div class="back-button-container">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+            </div>
+            <div class="page-container">
+                <div class="page-header">
+                    <h1 class="page-title">Skills</h1>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="skills-content">
+                    <div class="skill-category">
+                        <h3 class="category-title">Backend Development</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <h4>Java</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                                <span class="skill-level">80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">Frontend Development</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <h4>HTML5</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                                <span class="skill-level">95%</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <h4>CSS3</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                                <span class="skill-level">92%</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                                <span class="skill-level">75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title">Databases & Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <h4>MySQL</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                                <span class="skill-level">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Page -->
+        <section id="projects" class="page">
+            <div class="back-button-container">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+            </div>
+            <div class="page-container">
+                <div class="page-header">
+                    <h1 class="page-title">Projects</h1>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="projects-content">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="999l.jpeg" alt="Portfolio Project" class="project-img">
+                            <div class="project-overlay">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio</h3>
+                            <p>This is my personal portfolio website designed and developed to showcase my skills, projects, and experience in web development. I have built this portfolio using modern technologies like HTML, CSS, and JavaScript, focusing on responsive design and smooth user experience. It reflects my passion for coding, creativity, and continuous learning as a developer.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JAVASCRIPT</span>
+                            </div>
+                          
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="22.jpeg" alt="Project 2" class="project-img">
+                            <div class="project-overlay">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Driver Booking Service</h3>
+                            <p>A Driver Booking Service is a web-based application that allows customers to easily book professional drivers for their travel needs. 
+                              The platform connects users with available drivers for short trips, long-distance travel, or temporary driving services.
+                               Customers can browse available drivers, check their details, and make bookings based on their requirements. </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JAVASCRIPT</span>
+                            </div>
+                            <a href="https://sudhan123456.github.io/Driver-booking-service/" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="back-button-container">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+            </div>
+            <div class="page-container">
+                <div class="page-header">
+                    <h1 class="page-title">Get In Touch</h1>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Let's Work Together</h2>
+                        <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out using the form or through social media.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>sudhan@example.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+91 XXXXX XXXXX</p>
+                                </div>
+                            </div>
+
+
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Chennai, india</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Page -->
+        <section id="resume" class="page">
+            <div class="back-button-container">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+            </div>
+            <div class="page-container">
+                <div class="page-header">
+                    <h1 class="page-title">Resume</h1>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="resume-content">
+                    <div class="resume-controls">
+                        <button id="toggleResume" class="btn btn-primary">
+                            <i class="fas fa-file-pdf"></i> Show Resume
+                        </button>
+                        <a href="V. SUDHAN RESUME.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+
+                    <!-- Resume Viewer Modal -->
+                    <div id="resumeModal" class="resume-modal">
+                        <div class="resume-modal-content">
+                            <button id="closeResume" class="close-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <div id="resumeContainer" class="resume-container">
+                                <iframe id="resumeFrame" src="V. SUDHAN RESUME.pdf" type="application/pdf" width="100%" height="100%"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/sudhan-v" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sudhancodes-ui" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
